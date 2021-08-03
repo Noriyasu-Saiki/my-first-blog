@@ -1,0 +1,15 @@
+cd c:\pt
+
+REM 起動
+C:\PT\myvenv\Scripts\ACTIVATE
+
+REM サーバ起動
+python manage.py runserver
+
+REM ユーザ作成
+python manage.py createsuperuser 
+
+REM git
+git init
+git config --global user.name "N.Saiki"
+git config --global user.email saiki@k-s-s.co.jp
