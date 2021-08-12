@@ -13,3 +13,18 @@ REM git
 git init
 git config --global user.name "N.Saiki"
 git config --global user.email saiki@k-s-s.co.jp
+
+git status
+git add --all .
+git commit -m "My Django Girls app, first commit"
+
+
+git remote add origin https://github.com/Noriyasu-Saiki/my-first-blog.git
+git push -u origin master
+
+
+pip3.8 install --user pythonanywhere
+
+pa_autoconfigure_django.py https://github.com/Noriyasu-Saiki/my-first-blog.git
+
+python manage.py createsuperuser
